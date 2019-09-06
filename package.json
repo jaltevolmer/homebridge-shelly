@@ -25,7 +25,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexryd/homebridge-shelly.git"
+    "url": "https://github.com/kacepe/homebridge-shelly.git"
   },
   "dependencies": {
     "color-convert": "^2.0.0",
