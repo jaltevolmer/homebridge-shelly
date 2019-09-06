@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-shelly",
+  "name": "@kacepe/homebridge-shelly",
   "version": "0.9.2",
   "description": "Shelly plugin for Homebridge",
   "main": "index.js",
