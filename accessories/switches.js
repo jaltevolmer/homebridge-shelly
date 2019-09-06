@@ -101,6 +101,15 @@ module.exports = homebridge => {
         .getService(Service.Switch)
         .getCharacteristic(Characteristic.On)
         .setValue(newValue)
+      
+      if (this.config.autoCloseDelay && newValue === true) {
+          setTimeout(() => {
+            this.platformAccessory
+              .getService(Service.Switch)
+              .getCharacteristic(Characteristic.On)
+              .setValue(!newValue)
+          }, this.config.autoCloseDelay * 1000)
+      }
     }
 
     powerMeterChangeHandler(newValue) {
